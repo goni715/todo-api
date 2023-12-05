@@ -12,6 +12,7 @@ router.get("/get-all-todos", TodoController.GetAllTodos);
 router.delete('/delete-todo/:id',TodoController.DeleteTodo);
 router.patch('/update-todo/:id',TodoController.UpdateTodo);
 router.get('/get-todo/:id',TodoController.GetTodo);
+router.post('/send-mail',TodoController.SendMail);
 
 
 

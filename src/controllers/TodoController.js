@@ -5,6 +5,7 @@ const GetAllService = require("../services/common/GetAllService");
 const DeleteService = require("../services/common/DeleteService");
 const UpdateService = require("../services/common/UpdateService");
 const DetailsService = require("../services/common/DetailsService");
+const SendEmailUtility = require("../utility/SendEmailUtility");
 
 
 
@@ -29,3 +30,6 @@ exports.UpdateTodo=async(req,res)=>{
     await UpdateService(req,res,TodoModel)
 }
 
+exports.SendMail=async(req,res)=>{
+    await SendEmailUtility(req, res);
+}
